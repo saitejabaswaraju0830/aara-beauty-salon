@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aara Beauty Saloon - Premium beauty parlour in Ghala, Muscat, Oman. Expert facials, manicure, pedicure, hair treatments, eyebrow threading, saree draping & more. Open daily 10 AM - 10 PM. Rated 4.7★ (67 reviews).">
+    <meta name="description" content="Aara Beauty Saloon - Premium beauty parlour in Ghala, Muscat, Oman. Expert facials, manicure, pedicure, hair treatments, eyebrow threading, saree draping & more. Open daily 10 AM - 10 PM. Rated 4.7★.">
     <meta name="keywords" content="beauty saloon Muscat, beauty parlour Oman, facial Muscat, manicure pedicure Ghala, hair treatment Oman, eyebrow threading, saree draping Muscat, premium beauty services Oman">
     <meta name="author" content="Aara Beauty Saloon">
     <meta name="robots" content="index, follow">
@@ -11,7 +11,7 @@
     <!-- Open Graph / Social Media -->
     <meta property="og:title" content="Aara Beauty Saloon - Premium Beauty Parlour in Muscat, Oman">
     <meta property="og:description" content="Your premier beauty destination in Ghala, Muscat. Expert services in facials, hair, nails, threading & saree draping. Book your appointment today!">
-    <meta property="og:image" content="https://yourdomain.com/og-image.jpg"> <!-- Replace with actual image URL -->
+    <meta property="og:image" content="https://yourdomain.com/og-image.jpg">
     <meta property="og:url" content="https://yourdomain.com">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_GB">
@@ -20,7 +20,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Aara Beauty Saloon - Premium Beauty Parlour in Muscat">
     <meta name="twitter:description" content="Expert beauty services in Ghala, Muscat. Facials, hair, nails, threading & more. Rated 4.7★">
-    <meta name="twitter:image" content="https://yourdomain.com/twitter-image.jpg"> <!-- Replace with actual image URL -->
+    <meta name="twitter:image" content="https://yourdomain.com/twitter-image.jpg">
 
     <title>Aara Beauty Saloon - Premium Beauty Parlour in Muscat, Oman</title>
     
@@ -30,172 +30,325 @@
     
     <style>
         :root {
-            --primary: #008080;
-            --accent: #d4af37;
-            --dark: #121212;
-            --light: #f8f5f0;
-            --text: #333;
+            --primary: #c9a96d;      /* Luxurious gold */
+            --accent: #f5e6cc;       /* Soft champagne */
+            --dark: #1e1e1e;         /* Deep charcoal */
+            --light: #faf9f6;        /* Warm off-white */
+            --text: #333333;
+            --shadow: rgba(0,0,0,0.15);
         }
-        body { font-family: 'Roboto', sans-serif; color: var(--text); background: white; }
-        h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
+        body {
+            font-family: 'Cinzel', serif;
+            color: var(--text);
+            background: var(--light);
+            line-height: 1.7;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
 
-        .navbar { background: var(--dark) !important; transition: all 0.3s; }
-        .navbar.scrolled { background: rgba(18,18,18,0.95) !important; backdrop-filter: blur(10px); }
-        .nav-link { color: white !important; transition: color 0.3s; font-size: 1rem; }
-        .nav-link:hover { color: var(--accent) !important; }
+        .navbar {
+            background: rgba(30,30,30,0.95) !important;
+            backdrop-filter: blur(15px);
+            transition: all 0.4s ease;
+            box-shadow: 0 4px 20px var(--shadow);
+        }
+        .navbar.scrolled {
+            background: rgba(20,20,20,0.98) !important;
+        }
+        .nav-link {
+            color: white !important;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: color 0.4s;
+        }
+        .nav-link:hover {
+            color: var(--primary) !important;
+        }
 
-        /* Fully Responsive Navbar Brand */
+        /* Navbar Brand */
         .navbar-brand {
             display: flex;
             align-items: center;
-            font-family: 'Playfair Display', serif;
             font-weight: 900;
-            letter-spacing: 1.5px;
-            color: var(--accent) !important;
-            text-shadow: 0 0 10px rgba(212,175,55,0.6), 2px 2px 4px rgba(0,0,0,0.8);
-            transition: all 0.4s ease;
+            letter-spacing: 2px;
         }
         .navbar-brand img {
-            height: 70px; /* Base size */
+            height: 80px;
             margin-right: 15px;
-            filter: drop-shadow(0 0 12px rgba(212,175,55,0.8));
+            filter: drop-shadow(0 0 15px var(--primary));
             transition: all 0.4s ease;
         }
         .navbar-brand span {
-            font-size: 1.8rem;
-            background: linear-gradient(90deg, #b8860b, #ffd700, #b8860b, #ffd700);
+            font-size: 2rem;
+            background: linear-gradient(90deg, #c9a96d, #ffffff, #c9a96d);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             background-size: 200% 200%;
-            animation: shine 4s linear infinite;
+            animation: premiumShine 6s linear infinite;
         }
-        @keyframes shine {
+        @keyframes premiumShine {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
 
-        /* Responsive adjustments */
         @media (max-width: 992px) {
-            .navbar-brand img { height: 60px; }
-            .navbar-brand span { font-size: 1.6rem; }
+            .navbar-brand img { height: 65px; }
+            .navbar-brand span { font-size: 1.8rem; }
         }
         @media (max-width: 768px) {
-            .navbar-brand img { height: 50px; }
-            .navbar-brand span { font-size: 1.4rem; }
-        }
-        @media (max-width: 576px) {
-            .navbar-brand img { height: 45px; }
-            .navbar-brand span { font-size: 1.3rem; }
+            .navbar-brand img { height: 55px; }
+            .navbar-brand span { font-size: 1.5rem; }
         }
 
-        /* Hero Section - Fully Responsive */
+        /* Hero Section */
         .hero {
-            position: relative;
-            height: 100vh;
-            min-height: 600px;
-            display: flex;
-            align-items: center;
-            color: white;
-            overflow: hidden;
-        }
+    position: relative;
+    height: 100vh;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+    padding-top: 120px;  /* Add this line - adjust value if needed (e.g., 100px-150px) */
+    box-sizing: border-box;  /* Optional: ensures padding doesn't increase total height */
+}
         .hero::before {
             content: '';
             position: absolute;
             top: 0; left: 0;
             width: 100%; height: 100%;
             background: url('back.jpg') center/cover no-repeat;
-            filter: blur(5px);
+            filter: brightness(0.7) contrast(1.1);
             transform: scale(1.05);
             z-index: -2;
+            /* Add this line for blur */
+    backdrop-filter: blur(8px);  /* Adjust value: 5px to 15px as needed */
+    
+    /* Optional fallback for older browsers */
+    filter: brightness(0.7) contrast(1.1) blur(4px);
         }
         .hero::after {
             content: '';
             position: absolute;
             top: 0; left: 0;
             width: 100%; height: 100%;
-            background: rgba(0,0,0,0.7);
+            background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.7));
             z-index: -1;
         }
 
         .hero-text-3d {
-            font-size: clamp(3rem, 8vw, 5.5rem);
-            font-weight: bold;
-            background: linear-gradient(45deg, #ffd700, #fff, #00ffff);
+            font-size: clamp(3.5rem, 9vw, 6.5rem);
+            font-weight: 900;
+            background: linear-gradient(45deg, var(--primary), #ffffff, var(--accent));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-shadow: 4px 4px 10px rgba(0,0,0,0.6);
-            letter-spacing: 3px;
+            text-shadow: 0 8px 20px rgba(0,0,0,0.6);
+            letter-spacing: 4px;
         }
         .hero-subtitle-3d {
-            font-size: clamp(1.8rem, 5vw, 3rem);
-            color: #ffd700;
-            text-shadow: 1px 1px 0 #fff, 4px 4px 15px rgba(0,0,0,0.8);
+            font-size: clamp(2rem, 5.5vw, 3.5rem);
+            color: var(--accent);
+            text-shadow: 0 4px 15px rgba(0,0,0,0.8);
+            font-style: italic;
         }
-        .hero .stars { font-size: clamp(1.5rem, 4vw, 2.5rem); }
+        .hero .stars {
+            font-size: clamp(1.8rem, 4.5vw, 3rem);
+            color: var(--primary);
+        }
+        .hero h1 {
+    margin-bottom: 0.5rem !important;  /* Reduces space after the main title */
+}
 
+.hero .hero-subtitle-3d {
+    margin-bottom: 0.8rem !important;  /* Reduces space after the subtitle */
+}
+
+.hero .stars {
+    margin-bottom: 3rem !important;   /* Controls space before the buttons - adjust as needed */
+    font-size: clamp(1.6rem, 4vw, 2.8rem); 
+}
         .btn-primary {
-            background: linear-gradient(45deg, var(--accent), #ffd700);
+            background: linear-gradient(45deg, var(--primary), var(--accent));
             border: none;
             color: var(--dark);
-            padding: 14px 35px;
-            font-size: 1.2rem;
+            padding: 16px 40px;
+            font-size: 1.3rem;
             border-radius: 50px;
-            box-shadow: 0 5px 15px rgba(212,175,55,0.4);
-            transition: all 0.4s;
+            box-shadow: 0 8px 25px rgba(201,169,109,0.4);
+            transition: all 0.5s ease;
+            font-weight: 600;
         }
         .btn-primary:hover {
             background: white;
             color: var(--primary);
-            transform: translateY(-5px) scale(1.1);
-            box-shadow: 0 10px 25px rgba(0,128,128,0.3);
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 15px 35px rgba(201,169,109,0.5);
         }
 
-        /* Section Titles Responsive */
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+            padding: 16px 40px;
+            font-size: 1.3rem;
+            border-radius: 50px;
+            box-shadow: 0 8px 25px rgba(37,211,102,0.4);
+            transition: all 0.5s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 600;
+        }
+        .btn-whatsapp:hover {
+            background-color: #128C7E;
+            transform: translateY(-8px) scale(1.05);
+            color: white;
+        }
+
+        /* Floating WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            width: 70px;
+            height: 70px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 35px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            z-index: 1000;
+            transition: all 0.4s ease;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.15);
+            background-color: #128C7E;
+        }
+        .whatsapp-float i {
+            margin-top: 18px;
+        }
+
+        /* Section Titles - White for dark background sections */
         .section-title {
-            font-size: clamp(2rem, 5vw, 2.8rem);
-            margin: 60px 0 40px;
+            font-size: clamp(2.5rem, 6vw, 3.5rem);
+            margin: 80px 0 50px;
+            color: white !important;
+            text-shadow: 0 4px 15px rgba(0,0,0,0.8);
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 3px;
+            background: var(--primary);
+            margin: 20px auto;
+            border-radius: 2px;
         }
 
-        /* Cards fully responsive */
+        /* Contact section title - dark text */
+        #contact .section-title {
+            color: var(--dark) !important;
+            text-shadow: none;
+        }
+
+        /* Service & Review Cards - Fixed height for uniform size */
         .service-card, .review-card {
-            border-radius: 15px;
+            border-radius: 20px;
             overflow: hidden;
-            transition: all 0.4s;
+            transition: all 0.5s ease;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 10px 30px var(--shadow);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
         }
         .service-card:hover, .review-card:hover {
-            transform: translateY(-15px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            transform: translateY(-20px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+        }
+        .service-card .card-img-top {
+            height: 250px;
+            object-fit: cover;
+        }
+        .service-card .card-body {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
-        /* About Video Responsive */
+        /* About Video - Fit perfectly to container */
         .about-video-wrapper {
             position: relative;
-            padding-bottom: 56.25%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
             height: 0;
             overflow: hidden;
-            border-radius: 15px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
         }
         .about-video-wrapper video {
             position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .main-content {
+            position: relative;
+            background: url('back3.png') center top / cover no-repeat fixed;
+            min-height: 100vh;
+        }
+        .main-content::before {
+            content: '';
+            position: absolute;
             top: 0; left: 0;
             width: 100%; height: 100%;
-            object-fit: cover;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        /* Contact Section - Centered & Clear */
+        #contact {
+            background: var(--light);
+            padding: 100px 0;
+        }
+        #contact .contact-info {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+        }
+        #contact .contact-info p {
+            margin-bottom: 20px;
+            color: var(--text);
+        }
+        #contact .contact-info strong {
+            color: var(--dark);
+            font-weight: 600;
+        }
+        #contact .contact-info a {
+            color: #25D366;
+            font-weight: 600;
         }
 
         footer {
             background: var(--dark);
             color: white;
-            padding: 60px 0 20px;
+            padding: 80px 0 30px;
         }
-        footer p { margin: 10px 0; font-size: 1rem; }
-
-        @keyframes fadeInDown { from { opacity: 0; transform: translateY(-60px); } to { opacity: 1; transform: translateY(0); } }
-        @keyframes fadeInUp { from { opacity: 0; transform: translateY(60px); } to { opacity: 1; transform: translateY(0); } }
+        p, .card-text {
+            text-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Cinzel:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -225,168 +378,174 @@
         <div class="container" data-aos="fade-down">
             <h1 id="hero-heading" class="hero-text-3d">Welcome to Aara Beauty Saloon</h1>
             <p class="hero-subtitle-3d">Your Premier Beauty Destination in Muscat, Oman</p>
-            <p class="stars fs-3 mb-4">★★★★★ 4.7 (67 Reviews)</p>
-            <a href="#contact" class="btn btn-primary btn-lg" role="button" aria-label="Book an appointment">Book Appointment</a>
-        </div>
-    </section>
-
-    <section id="about" class="py-5 bg-light" data-aos="fade-up">
-        <div class="container">
-            <h2 class="section-title text-center">About Us</h2>
-            <div class="row align-items-center flex-column-reverse flex-md-row">
-                <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
-                    <div class="about-video-wrapper">
-                        <video autoplay muted loop playsinline aria-label="Aara Beauty Saloon interior video">
-                            <source src="back (2).mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-                <div class="col-md-6" data-aos="fade-left">
-                    <p class="lead">Aara Beauty Saloon is a premium beauty parlour located in Ghala, Muscat, offering exceptional services in a calm, aesthetic, and welcoming environment.</p>
-                    <p>We will provide quality hair, nail, and skin services. What will set Aara Beauty Saloon apart from the competition is our commitment to providing all of these services in one convenient location.</p>
-                    <p>Our experienced staff, including Kavitha, Ancy, and the team, provide professional and friendly service, ensuring every client leaves feeling pampered and satisfied.</p>
-                    <p>We specialize in facials, pedicures, manicures, hair treatments, eyebrow shaping, saree draping, and more.</p>
-                    <p class="fw-bold">Open Daily: 10 AM – 10 PM</p>
-                </div>
+            
+            <div class="d-flex justify-content-center gap-4 flex-wrap">
+                <a href="#contact" class="btn btn-primary btn-lg">Book Appointment</a>
+               
             </div>
         </div>
     </section>
 
-    <section id="services" class="py-5" data-aos="fade-up">
-        <div class="container">
-            <h2 class="section-title text-center">Our Services</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4" data-aos="zoom-in">
-                    <div class="card service-card shadow">
-                        <img src="https://lirp.cdn-website.com/a131a31c/dms3rep/multi/opt/Adobe-Firefly_advance-facial-skin-care-treatment-157147-640w.jpg" class="card-img-top" alt="Facials">
-                        <div class="card-body">
-                            <h5 class="card-title">Facials & Cleanup</h5>
-                            <p class="card-text">O3 Facial, Hydra Facial, Foot Facial, and more for instant glow.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="card service-card shadow">
-                        <img src="https://images.fresha.com/locations/location-profile-images/1098477/4175150/56400e43-2996-4119-bb13-fa3227ed9071-YBProfessional-US-California-LosAngeles-Fresha.jpg?class=venue-gallery-mobile&f_width=3840" class="card-img-top" alt="Manicure Pedicure">
-                        <div class="card-body">
-                            <h5 class="card-title">Manicure & Pedicure</h5>
-                            <p class="card-text">Professional nail care, detan, and polishing.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="card service-card shadow">
-                        <img src="https://nailandhammer.in/wp-content/uploads/2025/08/2023-07-24-1024x683.webp" class="card-img-top" alt="Hair Services">
-                        <div class="card-body">
-                            <h5 class="card-title">Hair Treatments</h5>
-                            <p class="card-text">Coloring, Highlights, Haircut, Henna, and Styling.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4" data-aos="zoom-in">
-                    <div class="card service-card shadow">
-                        <img src="https://spinsalon.in/wp-content/uploads/2025/08/BlogSpin_Salon_Luxurious-Facial-Treatments-for-Radiant-Skin.jpg" class="card-img-top" alt="Eyebrow Threading">
-                        <div class="card-body">
-                            <h5 class="card-title">Eyebrow & Threading</h5>
-                            <p class="card-text">Precise shaping and threading by experts like Kavitha.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="card service-card shadow">
-                        <img src="https://img.freepik.com/premium-photo/modern-luxury-beauty-salon-interior-with-marble-gold-accents-3d-rendering_34259-1387.jpg" class="card-img-top" alt="Saree Draping">
-                        <div class="card-body">
-                            <h5 class="card-title">Saree Draping</h5>
-                            <p class="card-text">Perfect draping that stays intact for your events.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="card service-card shadow">
-                        <img src="https://images.fresha.com/locations/location-profile-images/2622016/4783691/f063dbac-7be3-4231-8ac9-0a29160e3a3c-AlchemyI-NZ-Manawat-whanganuiRegion-PalmerstonNorth-PalmerstonNorthCentral-Fresha.jpg?class=venue-gallery-mobile&f_width=3840" class="card-img-top" alt="Waxing">
-                        <div class="card-body">
-                            <h5 class="card-title">Waxing & More</h5>
-                            <p class="card-text">Full body services in a clean and relaxing space.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="main-content">
 
-    <section id="gallery" class="py-5 bg-light" data-aos="fade-up">
-        <div class="container">
-            <h2 class="section-title text-center">Gallery</h2>
-            <div class="row g-4">
-                <div class="col-md-4" data-aos="flip-left" data-aos-delay="200"><img src="https://nailandhammer.in/wp-content/uploads/2025/08/2023-07-24-1024x683.webp" class="img-fluid rounded shadow" alt="Salon Interior"></div>
-                <div class="col-md-4" data-aos="flip-left" data-aos-delay="400"><img src="https://thumbs.dreamstime.com/b/modern-hair-salon-interior-design-stylish-clean-neutral-tones-gold-framed-mirrors-above-marble-counter-comfortable-chairs-385627021.jpg" class="img-fluid rounded shadow" alt="Salon Interior"></div>
-                <div class="col-md-4" data-aos="flip-left"><img src="https://thumbs.dreamstime.com/b/elegant-modern-hair-salon-interior-design-luxurious-lighting-stylish-chairs-concept-high-end-beauty-luxury-spa-elegant-341767830.jpg" class="img-fluid rounded shadow" alt="Treatment"></div>
-                <div class="col-md-4" data-aos="flip-left" data-aos-delay="200"><img src="https://lirp.cdn-website.com/a131a31c/dms3rep/multi/opt/Adobe-Firefly_Lady-having-an-Expert-Facial-Skin-Care-in-Lancaster-126534-640w.jpg" class="img-fluid rounded shadow" alt="Facial"></div>
-                <div class="col-md-4" data-aos="flip-left" data-aos-delay="400"><img src="https://thumbs.dreamstime.com/b/elegant-modern-hair-salon-interior-design-luxurious-lighting-stylish-chairs-concept-high-end-beauty-luxury-spa-elegant-352163406.jpg" class="img-fluid rounded shadow" alt="Styling"></div>
+        <section id="about" class="py-5" data-aos="fade-up">
+            <div class="container position-relative">
+                <h2 class="section-title text-center">About Us</h2>
+                <div class="row align-items-center flex-column-reverse flex-md-row">
+                    <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
+                        <div class="about-video-wrapper">
+                            <video autoplay muted loop playsinline aria-label="Aara Beauty Saloon interior video">
+                                <source src="back (2).mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-left">
+                        <div class="bg-white p-5 rounded-4 shadow-lg" style="background-color: rgba(255, 255, 255, 0.97);">
+                            <p class="lead fs-4">Aara Beauty Saloon is a premium beauty parlour located in Ghala, Muscat, offering exceptional services in a calm, aesthetic, and welcoming environment.</p>
+                            <p>We provide quality hair, nail, and skin services. What sets Aara apart is our commitment to excellence in one luxurious location.</p>
+                            <p>Our experienced staff, including Kavitha, Ancy, and the team, deliver professional and friendly service, ensuring every client leaves feeling pampered and radiant.</p>
+                            <p>We specialize in facials, pedicures, manicures, hair treatments, eyebrow shaping, saree draping, and more.</p>
+                            <p class="fw-bold mt-4 fs-5">Open Daily: 10 AM – 10 PM</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="reviews" class="py-5" data-aos="fade-up">
-        <div class="container">
-            <h2 class="section-title text-center">Customer Reviews <span class="stars">★★★★★ 4.7 (67 Reviews)</span></h2>
-            <div class="row">
-                <div class="col-md-6 mb-4" data-aos="fade-up">
-                    <div class="card review-card p-4">
-                        <div class="card-body">
-                            <h5>Dr Ashalekshmi</h5>
-                            <p class="stars">★★★★★</p>
-                            <p>“Loved the experience! The facial gave an instant glow... Kavitha handled everything very patiently and professionally.”</p>
+        <section id="services" class="py-5" data-aos="fade-up">
+            <div class="container position-relative">
+                <h2 class="section-title text-center">Our Services</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4" data-aos="zoom-in">
+                        <div class="card service-card shadow">
+                            <img src="https://media.istockphoto.com/id/1424281303/photo/woman-gets-face-or-facial-massage-at-spa-from-beauty-therapist-at-beauty-salon-for-skin.jpg?s=1024x1024&w=is&k=20&c=JACTdpMn7V8CM3su1dVFb7J-MmdAC8jUacY_pXFCWjM=" class="card-img-top" alt="Facials & Cleanup">
+                            <div class="card-body">
+                                <h5 class="card-title">Facials & Cleanup</h5>
+                                <p class="card-text">O3 Facial, Hydra Facial, Foot Facial, and more for instant glow.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card review-card p-4">
-                        <div class="card-body">
-                            <h5>Krishni Mihindukulasooriya</h5>
-                            <p class="stars">★★★★★</p>
-                            <p>“Great experience... Ms. Kavitha excels in professional skills... The place is very welcoming and soothing.”</p>
+                    <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="card service-card shadow">
+                            <img src="https://blushbeautybarfrisco.com/wp-content/uploads/2025/03/blush.jpeg" class="card-img-top" alt="Manicure & Pedicure">
+                            <div class="card-body">
+                                <h5 class="card-title">Manicure & Pedicure</h5>
+                                <p class="card-text">Professional nail care, detan, and polishing.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
-                    <div class="card review-card p-4">
-                        <div class="card-body">
-                            <h5>Jenny Alexander</h5>
-                            <p class="stars">★★★★★</p>
-                            <p>“Kavitha was very friendly and efficient. All treatments were done well... Definitely visiting again.”</p>
+                    <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="card service-card shadow">
+                            <img src="https://images.squarespace-cdn.com/content/v1/642cd3d46e6ac86b4b8d6fa1/1748381625687-NIMDW4XRGNKBY044H7OU/unsplash-image-Md_DhaFsnCQ.jpg" class="card-img-top" alt="Hair Treatments">
+                            <div class="card-body">
+                                <h5 class="card-title">Hair Treatments</h5>
+                                <p class="card-text">Coloring, Highlights, Haircut, Henna, and Styling.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="600">
-                    <div class="card review-card p-4">
-                        <div class="card-body">
-                            <h5>reshma pinto</h5>
-                            <p class="stars">★★★★★</p>
-                            <p>“Kavita did a fantastic job with saree draping. Staff were friendly and welcoming. Highly recommended!”</p>
+                    <div class="col-md-4 mb-4" data-aos="zoom-in">
+                        <div class="card service-card shadow">
+                            <img src="https://www.thelashlounge.com/wp-content/uploads/2020/01/adult-black-woman-brows-threading-tll.jpg" class="card-img-top" alt="Eyebrow & Threading">
+                            <div class="card-body">
+                                <h5 class="card-title">Eyebrow & Threading</h5>
+                                <p class="card-text">Precise shaping and threading by experts like Kavitha.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="card service-card shadow">
+                            <img src="https://southindiafashion.com/wp-content/uploads/2019/03/Nail-the-Office-Wear-Saree-Look-with-Ease-and-Style.png" class="card-img-top" alt="Saree Draping">
+                            <div class="card-body">
+                                <h5 class="card-title">Saree Draping</h5>
+                                <p class="card-text">Perfect draping that stays intact for your events.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="card service-card shadow">
+                            <img src="https://urbanwaxx.com/wp-content/uploads/2024/09/DSC_0109-scaled-e1728512449270.jpg" class="card-img-top" alt="Waxing & More">
+                            <div class="card-body">
+                                <h5 class="card-title">Waxing & More</h5>
+                                <p class="card-text">Full body services in a clean and relaxing space.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section id="gallery" class="py-5" data-aos="fade-up">
+            <div class="container position-relative">
+                <h2 class="section-title text-center">Gallery</h2>
+                <div class="row g-4">
+                    <div class="col-md-4" data-aos="flip-left" data-aos-delay="200"><img src="https://nailandhammer.in/wp-content/uploads/2025/08/2023-07-24-1024x683.webp" class="img-fluid rounded shadow" alt="Salon Interior"></div>
+                    <div class="col-md-4" data-aos="flip-left" data-aos-delay="400"><img src="https://thumbs.dreamstime.com/b/modern-hair-salon-interior-design-stylish-clean-neutral-tones-gold-framed-mirrors-above-marble-counter-comfortable-chairs-385627021.jpg" class="img-fluid rounded shadow" alt="Salon Interior"></div>
+                    <div class="col-md-4" data-aos="flip-left"><img src="https://thumbs.dreamstime.com/b/elegant-modern-hair-salon-interior-design-luxurious-lighting-stylish-chairs-concept-high-end-beauty-luxury-spa-elegant-341767830.jpg" class="img-fluid rounded shadow" alt="Treatment"></div>
+                    <div class="col-md-4" data-aos="flip-left" data-aos-delay="200"><img src="https://lirp.cdn-website.com/a131a31c/dms3rep/multi/opt/Adobe-Firefly_Lady-having-an-Expert-Facial-Skin-Care-in-Lancaster-126534-640w.jpg" class="img-fluid rounded shadow" alt="Facial"></div>
+                    <div class="col-md-4" data-aos="flip-left" data-aos-delay="400"><img src="https://thumbs.dreamstime.com/b/elegant-modern-hair-salon-interior-design-luxurious-lighting-stylish-chairs-concept-high-end-beauty-luxury-spa-elegant-352163406.jpg" class="img-fluid rounded shadow" alt="Styling"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="py-5" data-aos="fade-up">
+            <div class="container position-relative">
+                <h2 class="section-title text-center">Customer Reviews <span style="color: var(--primary);">★★★★★ 4.7 </span></h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4" data-aos="fade-up">
+                        <div class="card review-card p-4">
+                            <div class="card-body">
+                                <h5>Dr Ashalekshmi</h5>
+                                <p class="stars" style="color: var(--primary);">★★★★★</p>
+                                <p>“Loved the experience! The facial gave an instant glow... Kavitha handled everything very patiently and professionally.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card review-card p-4">
+                            <div class="card-body">
+                                <h5>Krishni Mihindukulasooriya</h5>
+                                <p class="stars" style="color: var(--primary);">★★★★★</p>
+                                <p>“Great experience... Ms. Kavitha excels in professional skills... The place is very welcoming and soothing.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card review-card p-4">
+                            <div class="card-body">
+                                <h5>Jenny Alexander</h5>
+                                <p class="stars" style="color: var(--primary);">★★★★★</p>
+                                <p>“Kavitha was very friendly and efficient. All treatments were done well... Definitely visiting again.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="card review-card p-4">
+                            <div class="card-body">
+                                <h5>reshma pinto</h5>
+                                <p class="stars" style="color: var(--primary);">★★★★★</p>
+                                <p>“Kavita did a fantastic job with saree draping. Staff were friendly and welcoming. Highly recommended!”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <section id="contact" class="py-5 bg-light" data-aos="fade-up">
         <div class="container">
-            <h2 class="section-title text-center">Contact Us</h2><grok-card data-id="130c16" data-type="places_card"></grok-card>
-            <div class="row mt-4">
-                <div class="col-md-6 mb-4 mb-md-0">
-                    <p><strong>Address:</strong> Majan 3 gala, Muscat 130, Oman<br>(Ghala Industrial Estate and nearby areas)</p>
-                    <p><strong>Phone:</strong> <a href="tel:+96894399044" aria-label="Call Aara Beauty Saloon">+968 9439 9044</a></p>
-                    <p><strong>Hours:</strong> Daily 10:00 AM – 10:00 PM</p>
-                </div>
-                <div class="col-md-6">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.5!2d58.383!3d23.567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e91f0b0b0b0b0b0%3A0x0!2sAara%20Beauty%20Saloon!5e0!3m2!1sen!2som!4v1735689600000" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  </div>
+            <h2 class="section-title text-center text-dark">Contact Us</h2>
+            <div class="contact-info">
+                <p><strong>ADDRESS:</strong> MAJAN 3 GALA, MUSCAT 130, OMAN<br>(GHALA INDUSTRIAL ESTATE AND NEARBY AREAS)</p>
+                <p><strong>PHONE:</strong> <a href="tel:+96894399044">+968 9439 9044</a></p>
+                <p><strong>WHATSAPP:</strong> <a href="https://wa.me/96894399044?text=Hi%2C%20I'd%20like%20to%20book%20an%20appointment" target="_blank"><i class="fab fa-whatsapp"></i> CHAT NOW</a></p>
+                <p><strong>HOURS:</strong> DAILY 10:00 AM – 10:00 PM</p>
             </div>
         </div>
     </section>
+
+    
 
     <footer class="text-center">
         <div class="container">
@@ -398,11 +557,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        AOS.init({ duration: 1200, once: true });
+        AOS.init({ duration: 1400, once: true });
         window.addEventListener('scroll', () => {
             document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
         });
     </script>
 </body>
-
 </html>
